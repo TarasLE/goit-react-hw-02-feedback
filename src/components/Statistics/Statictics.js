@@ -4,8 +4,8 @@ import styles from './Statictics.module.css'
 
 function Statictics({ good, neutral, bad, total, positivePercentage }) {
     return (
-        <div>
-            <h1>Statistics</h1>
+        <div className={styles.Container}>
+            {/* <h1>Statistics</h1> */}
             {total > 0 ? (
                 <div>
                     <ul className={styles.StatList}>
