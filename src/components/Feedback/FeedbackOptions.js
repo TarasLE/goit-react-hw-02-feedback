@@ -6,7 +6,7 @@ import styles from './FeedbackOption.module.css'
 // import Options from '../../feedbackOptions.json'
 // import Statictics from '../Statistics/Statictics'
 
-export default function TestFeedbackOptions({ options, onLeaveFeedback }) {
+export default function FeedbackOptions({ options, onLeaveFeedback }) {
     const option = [...Object.keys(options)]
     return (
         <div className={styles.Container}>
@@ -27,4 +27,9 @@ export default function TestFeedbackOptions({ options, onLeaveFeedback }) {
             </ul>
         </div>
     )
+}
+
+FeedbackOptions.propTypes = {
+    options: PropTypes.object.isRequired,
+    onLeaveFeedback: PropTypes.func.isRequired,
 }
