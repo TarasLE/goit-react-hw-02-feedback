@@ -1,0 +1,8 @@
+.StatList {
+    padding: 0;
+    width: max-content;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px red; */
+}
