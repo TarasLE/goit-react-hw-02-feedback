@@ -2,7 +2,13 @@
     display: flex;
     flex-direction: column;
     width: max-content;
-    border: solid 1px red;
+    /* border: solid 1px red; */
     margin-left: auto;
     margin-right: auto;
+}
+
+.Message {
+    color: darkgrey;
+    text-align: center;
+    width: 100%;
 }

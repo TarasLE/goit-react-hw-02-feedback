@@ -1,22 +1,29 @@
 .Container {
-    padding: 30px;
     display: flex;
     flex-direction: column;
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
+    width: max-width;
     align-items: center;
-    justify-content: center;
-    border: solid 1px green;
 }
 .OptList {
-    padding: 0;
-    width: max-content;
-    list-style: none;
     display: flex;
-    border: solid 1px red;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    width: max-width;
+    list-style: none;
 }
 
 .OptItem {
-    margin: 15px;
+}
+
+.FeedbackBtn {
+    width: 80px;
+    height: 60px;
+    margin: 10px;
+    background-color: rgb(238, 250, 130);
+}
+
+.FeedbackBtn:hover {
+    color: #ffffff;
+    background-color: rgb(4, 155, 72);
 }

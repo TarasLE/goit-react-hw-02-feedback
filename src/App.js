@@ -1,20 +1,11 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-// import FeedbackOptions from './components/Feedback/TestFeedbackOptions'
 import Statistics from './components/Statistics/Statictics'
 import FeedbackOptions from './components/Feedback/FeedbackOptions'
 import Section from './components/Section/Section'
+import styles from './App.module.css'
 
 export default class App extends Component {
-    // constructor() {
-    //     super()
-    //     this.state = {
-    //         good: 0,
-    //         neutral: 0,
-    //         bad: 0,
-    //     }
-    // }
-
     state = {
         good: 0,
         neutral: 0,
@@ -22,22 +13,10 @@ export default class App extends Component {
     }
 
     static defaultProps = {}
-
     static propTypes = {}
-
-    // handleFeedback = (e) => {
-    //     this.setState({ [e]: this.state[e] + 1 })
-    //     console.log(this.state)
-    // }
 
     handleFeedback = (e) => {
         this.setState({ [e]: this.state[e] + 1 })
-        // console.log(this)
-        // const { teststate } = this.state
-        // console.log(teststate)
-        // console.log('working')
-        // console.log(this.state)
-        // console.log(e)
     }
 
     countTotalFeedback = () => {
@@ -59,7 +38,7 @@ export default class App extends Component {
         const positiceFeedbacks = this.countPositiveFeedbackPercentage()
         const total = this.countTotalFeedback()
         return (
-            <div className="App">
+            <div className={styles.App}>
                 {/* <FeedbackOptions /> */}
                 <Section title="Please leave feedback">
                     <FeedbackOptions
